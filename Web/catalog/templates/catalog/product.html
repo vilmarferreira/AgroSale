@@ -11,12 +11,12 @@
 <div class="row">
   <div class="col-sm-4">
       <a href="#" class="thumbnail">
-          <img src="http://placehold.it/350x250" alt="" />
+          <img src="{{ product.image.url }}" alt="" />
       </a>
   </div>
   <div class="col-sm-8">
       <p class="text-right">
-          <a href="{% url 'checkout:create_cartitem' product.slug %}" class="btn btn-success">Adicionar ao Carrinho</a>
+          <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
       </p>
       {{ product.description|linebreaks }}
   </div>

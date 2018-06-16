@@ -10,7 +10,6 @@ class Category(models.Model):
 
     created= models.DateTimeField('Criado em', auto_now_add=True) #setar a data atual quando é criado
     modified = models.DateTimeField('Modificado em', auto_now=True) #para setar a data de modificação da categoria
-
     class Meta:
         verbose_name='Categoria'
         verbose_name_plural='Categorias'
@@ -30,7 +29,8 @@ class Product (models.Model):
     category = models.ForeignKey(Category, verbose_name='Categoria',on_delete=models.CASCADE)   #Chave estrangeiro
     description = models.TextField('Descrição', blank=True)
     price = models.DecimalField('Preço', decimal_places=2, max_digits=10) # define 2 casas decimais e no máximo 10 digitos para o preço do produto
-
+    image = models.ImageField(upload_to='imag_product', null=True,
+                              blank=True)  # Configuração de imagem para realizar o upload
     created = models.DateTimeField('Criado em', auto_now_add=True)  # setar a data atual quando é criado
     modified = models.DateTimeField('Modificado em', auto_now=True)  # para setar a data de modificação da categoria
 
