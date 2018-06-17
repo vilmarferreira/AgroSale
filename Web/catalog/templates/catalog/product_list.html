@@ -10,6 +10,33 @@
 <div class="page-header">
     <h1>Produtos</h1>
 </div>
+
+    {% if products %}
+    <div class="span9" id="searchResults">
+        <div class="btn-toolbar">
+            <ul class="btn-group sort-by" data-toggle="buttons-radio">
+                <li class="sort btn active" data-sort="distance" data-close="true">Near</li>
+                <li class="sort btn" data-sort="distance" data-close="false">Far</li>
+            </ul>
+            <ul class="btn-group filter-availability" data-toggle="buttons-radio">
+                <li class="btn active" data-filter="filter-none" data-value="">All</li>
+                <li class="btn" data-filter="filter-freelance" data-value="1">Freelance</li>
+                <li class="btn" data-filter="filter-fulltime" data-value="2">Full time</li>
+                <li class="btn" data-filter="filter-anything" data-value="3">Anything</li>
+                <li class="btn" data-filter="filter-nothing" data-value="0">Friends</li>
+            </ul>
+        </div>
+{##}
+{#        <ul class="unstyled list">#}
+{#        {% for product in products %}#}
+{#            {% include "catalog/_product.html" %}#}
+{#        {% endfor %}#}
+{#        </ul>#}
+    </div>
+    {% endif %}
+
+
+
 <div class="row">
     {% for product in products %}
     {% include "catalog/_product.html" %}

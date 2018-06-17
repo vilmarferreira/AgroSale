@@ -2,7 +2,7 @@
 
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-
+from django.db import models
 from .models import Product, Category
 
 
@@ -13,6 +13,16 @@ class ProductListView(generic.ListView):
     context_object_name = 'products'
     paginate_by = 3
 
+    def get_queryset(self):
+        queryset = Product.objects.all()
+        q = self.request.GET.get('q', '')
+        if q:
+            queryset = queryset.filter(
+                models.Q(name__icontains=q) | models.Q(category__name__icontains=q) \
+                | models.Q(description__icontains=q)
+            )
+        return queryset
+
 
 product_list = ProductListView.as_view()
 
@@ -21,7 +31,7 @@ class CategoryListView(generic.ListView):
 
     template_name = 'catalog/category.html'
     context_object_name = 'product_list'
-    paginate_by = 3
+    paginate_by = 6
 
     def get_queryset(self):
         return Product.objects.filter(category__slug=self.kwargs['slug'])
