@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'widget_tweaks',
     'watson',
-
+    'paypal.standard.ipn',
+    'pagseguro',
 
 ]
 
