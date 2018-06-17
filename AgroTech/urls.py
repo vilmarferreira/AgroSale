@@ -42,5 +42,6 @@ urlpatterns = [
     path('conta/', include('accounts.urls', namespace='accounts')),
     path('compras/', include('checkout.urls', namespace='checkout')),
     path('paypal/', include('paypal.standard.ipn.urls')),
+    path('servicos/',include('servico_profissional.urls', namespace='profissional_servicos')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

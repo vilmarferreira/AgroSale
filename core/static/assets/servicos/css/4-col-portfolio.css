@@ -1,0 +1,70 @@
+
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+#divBusca{
+  background-color:#2F4F4F;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+}
+ 
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+.container {
+  width: 50%; 
+  position: relative;   
+}
+label {display:block;}
+input {width: 100%;} 
+input,  button {padding: 10px;}
+button {
+  position: absolute;   
+  top: 0; 
+  right: 0;
+
+}
+
+
+p { color: #FFFFFF; 
+	float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+
+
+
+
+
+
+}
+
+
+
+

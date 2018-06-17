@@ -1,6 +1,6 @@
 # coding=utf-8
 from django.contrib.auth.models import User
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.mail import  send_mail
 from django.urls import reverse_lazy
@@ -16,6 +16,7 @@ class HomeView(TemplateView):
 
 home = HomeView.as_view()
 class IndexView(TemplateView):
+
 
     template_name = 'index.html'
 
