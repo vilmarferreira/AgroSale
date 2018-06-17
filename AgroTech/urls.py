@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.contrib.auth import login,logout
+from django.contrib.auth.views import logout,login
 from django.urls import path, include
 from rest_framework import routers
 
@@ -34,7 +34,7 @@ urlpatterns = [
     path('vendas/', views.index, name='index'),
     path('contato/', views.contact, name='contact'),
     path('entrar/', login, {'template_name': 'login.html'}, name='login'),
-    path('sair/', logout, {'next_page': 'index'}, name='logout'),
+    path('sair/', logout, {'next_page': 'home'}, name='logout'),
     path('registro/', views.register, name='register'),
     path('catalogo/', include('catalog.urls', namespace="catalog")),
     path('api/', include(router.urls)),
