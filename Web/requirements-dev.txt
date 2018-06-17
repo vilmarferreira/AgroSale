@@ -1,3 +1,4 @@
+arrow==0.12.1
 certifi==2018.4.16
 chardet==3.0.4
 dj-database-url==0.5.0
@@ -5,14 +6,20 @@ dj-static==0.0.6
 Django==2.0.5
 django-bootstrap-form==3.4
 django-filter==1.1.0
+django-paypal==0.5.0
 django-watson==1.5.2
 django-widget-tweaks==1.4.2
 djangorestframework==3.8.2
 idna==2.6
+pagseguro==0.3.2
+paypal==1.2.5
 Pillow==5.1.0
+python-dateutil==2.7.3
 python-decouple==3.1
 pytz==2018.4
 requests==2.18.4
+six==1.11.0
 slumber==0.7.1
 static3==0.7.0
 urllib3==1.22
+xmltodict==0.11.0
