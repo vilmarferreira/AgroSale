@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-	<title></title>
+	<title>Profissionais | AgroSale</title>
 	<link href="{% static 'assets/servicos/css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'assets/servicos/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
     <link href="{% static 'assets/servicos/css/4-col-portfolio.css'%} " rel="stylesheet">
@@ -10,7 +10,7 @@
 		body{
 			margin: 0;
 			padding: 0;
-			background: url(img/3.jpg) no-repeat center fixed;
+			background: url({% static 'assets/servicos/img/3.jpg' %}) no-repeat center fixed;
 			background-size: cover;
 			-vebkit-background-size:cover;
 			-moz-background-size:cover
@@ -36,61 +36,19 @@
         <div class="col-lg-12">
           <h2 class="my-4">Profissionais</h2>
         </div>
+          {% for perfil in list %}
         <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{ perfil.foto.url }}" alt="">
            <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Eight</a>
+                <a href="#">{{ perfil.profissao }}</a>
+                <a href="#">{{ perfil.nomeCompleto }}</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
+              <p class="card-text">{{ perfil.resumo }}</p>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Eight</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-        </div>
-      </div>
+        {% endfor %}
+
 
       <ul class="pagination justify-content-center">
         <li class="page-item">

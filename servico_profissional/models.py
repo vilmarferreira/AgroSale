@@ -26,7 +26,7 @@ class PerfilProfissional(models.Model):
     #user = models.CharField(max_length=100, default=User.)
     nomeCompleto= models.CharField(max_length=100)
     foto = models.ImageField(upload_to='img_perfil')
-
+    resumo = models.CharField(max_length=200)
     profissao = models.CharField(max_length=100)
     experiencias = models.ManyToManyField(experienciaProfissional)
     categoria = models.ForeignKey(CategoryService,on_delete=models.CASCADE)
