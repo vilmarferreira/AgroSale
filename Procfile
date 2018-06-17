@@ -1,1 +1,1 @@
-web: gunicorn AgroTech.wsgi --log-file -
+web: gunicorn Web.AgroTech.wsgi --log-file -
