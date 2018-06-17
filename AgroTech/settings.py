@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'catalog',
     'accounts',
     'checkout',
+    'servico_profissional',
     ##LIBS
     'rest_framework',
     'widget_tweaks',
