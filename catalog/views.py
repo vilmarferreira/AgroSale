@@ -19,8 +19,10 @@ class ProductListView(generic.ListView):
         queryset = Product.objects.all()
         q = self.request.GET.get('q', '')
         if q:
-            queryset =watson.filter(queryset, q)
-
+            queryset = queryset.filter(
+                models.Q(name__icontains=q) | models.Q(category__name__icontains=q) \
+                | models.Q(description__icontains=q)
+            )
         return queryset
 
 

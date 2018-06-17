@@ -30,7 +30,8 @@ router.register(r'categorias', CategoryViewSet, base_name=Category)
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.home, name='home'),
+    path('vendas/', views.index, name='index'),
     path('contato/', views.contact, name='contact'),
     path('entrar/', login, {'template_name': 'login.html'}, name='login'),
     path('sair/', logout, {'next_page': 'index'}, name='logout'),

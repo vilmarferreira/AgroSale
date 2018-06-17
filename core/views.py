@@ -11,7 +11,10 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import View, TemplateView, CreateView
 from django.contrib.auth import get_user_model
 
+class HomeView(TemplateView):
+    template_name = 'home.html'
 
+home = HomeView.as_view()
 class IndexView(TemplateView):
 
     template_name = 'index.html'
