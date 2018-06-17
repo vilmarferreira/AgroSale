@@ -3,8 +3,12 @@ from .models import PerfilProfissional
 # Create your views here.
 
 
-def ViewCurriculo(request):
-    return  render(request, 'servico_profissional/Curriculo.html')
+def ViewCurriculo(request, id):
+    perfil = PerfilProfissional.objects.get(pk=id)
+    context = {
+        'perfil':perfil
+    }
+    return  render(request, 'servico_profissional/Curriculo.html', context)
 
 def ViewServicos(request):
     list = PerfilProfissional.objects.all()

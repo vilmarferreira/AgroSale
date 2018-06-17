@@ -41,7 +41,7 @@
           <img class="rounded-circle img-fluid d-block mx-auto" src="{{ perfil.foto.url }}" alt="">
            <div class="card-body">
               <h4 class="card-title">
-                <a href="#">{{ perfil.profissao }}</a>
+                <a href="{% url 'profissional_servicos:viewPerfil' perfil.id %}">{{ perfil.profissao }}</a>
                 <a href="#">{{ perfil.nomeCompleto }}</a>
               </h4>
               <p class="card-text">{{ perfil.resumo }}</p>
