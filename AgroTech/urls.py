@@ -40,4 +40,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
     path('conta/', include('accounts.urls', namespace='accounts')),
+    path('compras/', include('checkout.urls', namespace='checkout')),
+    path('paypal/', include('paypal.standard.ipn.urls')),
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
