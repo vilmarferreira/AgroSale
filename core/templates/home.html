@@ -69,20 +69,13 @@
             </ul> <!-- .cd-hero-slider -->
 <br>
             <ul class="row" align="center">
-                <a class="nav-link " style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
+                {% for category in categories %}
+                <a class="nav-link " style="margin: 0px 8px 0px 8px" href="{{ category.get_absolute_url }}"><b>{{ category }}</b></a>
 
-                <a class="nav-link " style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
+               {% endfor %}
 
-                <a class="nav-link " style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
-
-                <a class="nav-link" style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
-
-                <a class="nav-link" style="margin: 0px 8px 0px 8px" href="#""><b>Categoria</b></a>
-
-                <a class="nav-link" style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
-
-                <a class="nav-link" style="margin: 0px 8px 0px 8px" href="#"><b>Categoria</b></a>
             </ul>
+
 
         </section> <!-- .cd-hero -->
 

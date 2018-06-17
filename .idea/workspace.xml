@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="344d4190-8a75-4057-8559-9f848de49dbe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html" beforeDir="false" afterPath="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html" beforeDir="false" afterPath="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico_profissional/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/servico_profissional/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico_profissional/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/servico_profissional/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +42,8 @@
       <file leaf-file-name="Serviços.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+            <state relative-caret-position="251">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -63,17 +60,17 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="54" column="19" selection-end-line="97" />
+            <state relative-caret-position="336">
+              <caret line="43" column="28" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="36" column="88" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
+            <state relative-caret-position="193">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -87,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Curriculo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Curriculo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="375">
               <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
             </state>
           </provider>
@@ -157,12 +154,12 @@
         <option value="$PROJECT_DIR$/servico_profissional/admin.py" />
         <option value="$PROJECT_DIR$/AgroTech/urls.py" />
         <option value="$PROJECT_DIR$/servico_profissional/models.py" />
-        <option value="$PROJECT_DIR$/core/templates/home.html" />
         <option value="$PROJECT_DIR$/servico_profissional/views.py" />
         <option value="$PROJECT_DIR$/servico_profissional/urls.py" />
-        <option value="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html" />
+        <option value="$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html" />
+        <option value="$PROJECT_DIR$/core/templates/home.html" />
       </list>
     </option>
   </component>
@@ -192,12 +189,34 @@
             <path>
               <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
               <item name="AgroSale" type="462c0819:PsiDirectoryNode" />
-              <item name="AgroTech" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
               <item name="AgroSale" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgroSale" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgroSale" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgroSale" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AgroSale" type="b2602c69:ProjectViewProjectNode" />
@@ -297,10 +316,10 @@
       <window_info anchor="bottom" id="manage.py@AgroSale" weight="0.3298969" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3298969" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3298969" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
@@ -454,20 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="54" column="19" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="36" column="88" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servico_profissional/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -505,17 +510,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html">
+    <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+        <state relative-caret-position="375">
+          <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Curriculo.html">
+    <entry file="file://$PROJECT_DIR$/servico_profissional/templates/servico_profissional/Serviços.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
+        <state relative-caret-position="251">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
